@@ -1,0 +1,45 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.18.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.liutao'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+dependencies {
+	compile(
+			[group: 'org.springframework', name: 'spring-context', version: springVersion],
+			[group: 'org.springframework', name: 'spring-tx', version: springVersion],
+			[group: 'org.springframework', name: 'spring-jdbc', version: springVersion],
+			[group: 'org.springframework', name: 'spring-core', version: springVersion],
+
+			[group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: springBootVersion],
+
+			[group: 'org.apache.tomcat', name: 'tomcat-jdbc', version: tomcatJdbcPoolVersion],
+
+			[group: 'mysql', name: 'mysql-connector-java', version: mysqlConnectorVersion],
+
+			[group: 'org.mybatis', name: 'mybatis', version: mybatisVersion],
+			[group: 'org.mybatis', name: 'mybatis-spring', version: springMybatisVersion],
+
+			[group: 'org.aspectj', name: 'aspectjrt', version: aspectjVersiion],
+			[group: 'org.aspectj', name: 'aspectjweaver', version: aspectjVersiion],
+
+			[group: 'org.apache.commons', name: 'commons-lang3', version: apacheCommonLang3Version],
+
+	)
+}
