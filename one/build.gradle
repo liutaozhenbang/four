@@ -30,7 +30,9 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	runtimeOnly('mysql:mysql-connector-java')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
-    compile(
+
+	compile(
+			[group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'],
             [group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: mybatisSpringVersion],
             [group: 'org.apache.httpcomponents', name: 'httpcore', version: httpcoreVersion],
             [group: 'org.apache.httpcomponents', name: 'httpmime', version: httpmimeVersion],
