@@ -39,8 +39,6 @@ dependencies {
             //[group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: springBootVersion],
 
 
-            [group: 'javax.xml', name: 'jaxrpc', version: javaxXmlVersion],
-            [group: 'jstl', name: 'jstl', version: jstlVersion],
             [group: 'log4j', name: 'log4j', version: log4jVersion],
             [group: 'taglibs', name: 'standard', version: taglibsVersion],
             [group: 'wsdl4j', name: 'wsdl4j', version: wsdl4jVersion],
