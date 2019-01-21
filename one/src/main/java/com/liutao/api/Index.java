@@ -2,26 +2,17 @@ package com.liutao.api;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.Map;
+import static com.liutao.util.SysUtil.getToken;
 
 @Controller
-@RequestMapping("/main")
+@RequestMapping("")
 public class Index {
 
-    @RequestMapping("/index")
-    public String index(Model model) {
-        model.addAttribute("loginName", "admin");
-        model.addAttribute("loginId", "27");
-        return "index";
+    @GetMapping("")
+    public String index(String pathName, Model model) {
+        return getToken(pathName, model);
     }
-
-    @RequestMapping("/success")
-    public String success(Map<String, Object> paramMap) {
-        paramMap.put("name", "刘涛");
-        paramMap.put("age", 28);
-        return "success";
-    }
-
 }
