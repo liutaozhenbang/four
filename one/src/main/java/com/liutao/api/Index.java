@@ -15,4 +15,10 @@ public class Index {
     public String index(String pathName, Model model) {
         return getToken(pathName, model);
     }
+
+    @GetMapping("liutaozhenbang")
+    public String liutaozhenbang() {
+        return "liutaozhenbang";
+    }
+
 }
