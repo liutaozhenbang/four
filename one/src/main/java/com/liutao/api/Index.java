@@ -18,7 +18,7 @@ public class Index {
 
     @GetMapping("liutaozhenbang")
     public String liutaozhenbang() {
-        return "liutaozhenbang";
+        return "liutaozhenshuaishuaishuai";
     }
 
 }
