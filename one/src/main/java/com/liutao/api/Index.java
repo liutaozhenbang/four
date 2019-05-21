@@ -18,7 +18,7 @@ public class Index {
 
     @GetMapping("liutaozhenbang")
     public String liutaozhenbang() {
-        return "liutaozhenbang";
+        return "刘涛侦探事务所";
     }
 
 }
