@@ -16,9 +16,4 @@ public class Index {
         return getToken(pathName, model);
     }
 
-    @GetMapping("liutaozhenbang")
-    public String liutaozhenbang() {
-        return "liutaozhenshuaishuaishuai";
-    }
-
 }
