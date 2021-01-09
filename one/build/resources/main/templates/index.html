@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>刘涛真棒</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div align="center" style="font-family: 楷体; font-size: 50px">
+    姓名:<span th:text="${name}"></span>&nbsp;
+    性别:<span th:text="${sex}"></span>&nbsp;
+    年龄:<span th:text="${age}"></span>&nbsp;
+    职业:<span th:text="${work}"></span>&nbsp;
+</div>
+<div>
+    <ul>
+        <li><a th:href="@{/main/index(pathName=guo_jia_bo_wu_guan)}">国家博物馆</a></li>
+        <li><a th:href="@{/main/index(pathName=jun_shi_po_wu_guan)}">军事博物馆</a></li>
+        <li><a th:href="@{/main/index(pathName=zhong_guo_guo_mao)}">中国国贸</a></li>
+        <li><a th:href="@{/main/index(pathName=tu_shu_guan)}">国家图书馆</a></li>
+        <li><a th:href="@{/main/index(pathName=tian_an_men)}">天安门</a></li>
+        <li><a th:href="@{/main/index(pathName=na_luo_gu_xiang)}">南罗鼓巷</a></li>
+        <li><a th:href="@{/main/index(pathName=niao_chao_shui_li_fang)}">鸟巢</a></li>
+        <li><a th:href="@{/main/index(pathName=lenovo_beiyan)}">北研记忆</a></li>
+        <li><a th:href="@{/main/index(pathName=lenovo_headquarters)}">联想总部基地</a></li>
+        <li><a th:href="@{/main/index(pathName=xiao_wu)}">北京小屋</a></li>
+        <li><a th:href="@{/main/index(pathName=hai_dian_huang_zhuang)}">海淀黄庄</a></li>
+        <li><a th:href="@{/main/index(pathName=xi_an)}">西安</a></li>
+        <li><a th:href="@{/main/index(pathName=xiao_wu)}">北京小屋</a></li>
+        <li><a th:href="@{/main/index(pathName=hun_sha_zhao_zhuang_biao)}">婚纱照装裱</a></li>
+        <li><a th:href="@{/main/index(pathName=hun_sha_zhao_bing_shui_jing)}">婚纱照水晶冰晶</a></li>
+        <li><a th:href="@{/main/index(pathName=hun_sha_zhao_xiang_ce)}">婚纱照相册</a></li>
+        <li><a th:href="@{/main/index(pathName=lao_puo_hai_zi)}">老婆孩子</a></li>
+    </ul>
+</div>
+</body>
+</html>

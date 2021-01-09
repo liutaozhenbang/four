@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>天安门</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div align="center" style="font-family: 楷体; font-size: 50px">
+    姓名:<span th:text="${name}"></span>&nbsp;
+    性别:<span th:text="${sex}"></span>&nbsp;
+    年龄:<span th:text="${age}"></span>&nbsp;
+    职业:<span th:text="${work}"></span>&nbsp;
+</div>
+<div>
+    <img th:height="250px" th:src="@{/tu_pian/tian_an_men/gang_chang_zi_pai.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tian_an_men/guo_jia_da_ju_yuan.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tian_an_men/tain_an_men_qian.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tian_an_men/tian_an_men_guang_chang.jpg}" />
+</div>
+</body>
+</html>

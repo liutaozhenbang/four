@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>国家图书馆</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div align="center" style="font-family: 楷体; font-size: 50px">
+    姓名:<span th:text="${name}"></span>&nbsp;
+    性别:<span th:text="${sex}"></span>&nbsp;
+    年龄:<span th:text="${age}"></span>&nbsp;
+    职业:<span th:text="${work}"></span>&nbsp;
+</div>
+<div>
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/gu_dai_wen_zi.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/gu_dai_wen_zi_2.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/shu_ji.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/shu_ji_2.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/shu_ji_3.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/shu_ji_4.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/shu_ji_5.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/shu_ji_6.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/xiang_zun.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/xiang_zun_2.jpg}" />
+    <img th:height="250px" th:src="@{/tu_pian/tu_shu_guan/xing_shu_lin.jpg}" />
+</div>
+</body>
+</html>

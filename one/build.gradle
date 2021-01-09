@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.18.RELEASE'
+		springBootVersion = '2.2.4.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -24,7 +24,6 @@ repositories {
 
 
 dependencies {
-	compile project(':two')
 	compile project(':design')
 	implementation('org.springframework.boot:spring-boot-starter-data-redis')
 	implementation('org.springframework.boot:spring-boot-starter-web')
